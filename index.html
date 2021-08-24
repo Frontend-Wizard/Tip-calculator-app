@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <title>Tip calculator</title>
+    </head>
+
+    <body>
+        <img id="logo" src="Images/logo.svg" alt="">
+        <main>
+            <div id="DesktopColumn">
+                <div class="bill">
+                    <h1>Bill</h1>
+                    <div class="InputData">
+                        <img src="Images/icon-dollar.svg" alt="">
+                        <input type="number" id="BillInput" value="0">
+                    </div>
+                </div>
+                <div class="tip">
+                    <h1>Select Tip %</h1>
+                    <div class="tipOffer">
+                        <h2 id="5">5%</h2>
+                        <h2 id="10">10%</h2>
+                        <h2 id="15">15%</h2>
+                        <h2 id="25">25%</h2>
+                        <h2 id="50">50%</h2>
+                        <input type="number" id="CustomTip" placeholder="Custom">
+                    </div>
+                </div>
+                <div class="NumberOfPeople">
+                    <div class="row" style="margin-bottom: 0px;">
+                        <h1>Number of People</h1>
+                        <h1 id="NumOfPeopleError"></h1>
+                    </div>
+                    <div class="InputData">
+                        <img src="Images/icon-person.svg" alt="">
+                        <input type="number" id="NumOfPeople" min="1" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="row">
+                    <div class="column">
+                        <h3>Tip Amount</h3>
+                        <h4>/ person</h4>
+                    </div>
+                    <h5>$<span id="TipAmount">0.00</span> </h5>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Total</h3>
+                        <h4>/ person</h4>
+                    </div>
+                    <h5>$<span id="Total">0.00</span> </h5>
+                </div>
+                <button id="Reset">RESET</button>
+            </div>
+        </main>
+        <footer>
+            <div class="attribution">
+                <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+                    Frontend Mentor</a>. Coded by Frontend-Wizard.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
