@@ -10,8 +10,8 @@ This is a solution to the Order summary card challenge on Frontend Mentor. Front
 
 ### Links
 
-- [Solution URL] (https://github.com/Frontend-Wizard/Tip-calculator-app)
-- [Live Site URL] (https://frontend-wizard.github.io/Tip-calculator-app/)
+- ![Solution URL] (https://github.com/Frontend-Wizard/Tip-calculator-app)
+- ![Live Site URL] (https://frontend-wizard.github.io/Tip-calculator-app/)
 
 ### Built with
 
