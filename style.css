@@ -1,3 +1,7 @@
+:root{
+	font-size: 24px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +12,6 @@
 
 body,
 footer {
-	font-size: 24px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -24,6 +27,7 @@ footer {
 main {
 	width: 70%;
 	max-width: 1300px;
+	min-width: 300px;	
 	padding: 32px;
 	background-color: #ffffff;
 	box-shadow: 0px 25px 30px 16px rgba(38, 192, 171, 0.09);
@@ -39,7 +43,7 @@ main div:last-child {
 }
 
 h1 {
-	font-size: 16px;
+	font-size: .67rem;
 	line-height: 24px;
 	margin-bottom: 6px;
 	color: #5e7a7d;
@@ -49,8 +53,7 @@ h2,
 input {
 	outline: none;
 	border: none;
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 1rem;
 	color: #00494d;
 }
 
@@ -65,21 +68,18 @@ input::-webkit-inner-spin-button {
 }
 
 h3 {
-	font-size: 16.5px;
-	line-height: 24px;
+	font-size: .69rem;
 	letter-spacing: -0.02em;
 	color: #ffffff;
 }
 
 h4 {
-	font-size: 13px;
-	line-height: 19px;
+	font-size: .54rem;
 	color: #7f9c9f;
 }
 
 h5 {
-	font-size: 31.5px;
-	line-height: 47px;
+	font-size: 1.31rem;
 	letter-spacing: -0.01em;
 	color: #26c0ab;
 }
@@ -96,8 +96,7 @@ button {
 	width: 100%;
 	background-color: #26c0ab;
 	border-radius: 4px;
-	font-size: 20.5px;
-	line-height: 30px;
+	font-size: .85rem;
 	letter-spacing: -0.02em;
 	color: #00494d;
 }
@@ -126,21 +125,20 @@ button {
 	outline: none;
 }
 
-input:focus {
+#CustomTip:focus {
 	border: 2px solid #26c0ab;
 	border-radius: 5px;
-	color: #00494d !important;
+	color: #00494d;
 }
 
 .tipOffer *,
 .tipOffer input::placeholder {
-	margin-right: 6%;
 	height: 48px;
-	padding-top: 10px;
+	margin-right: 6%;
 	margin-top: 16px;
+	padding-top: 10px;
 	text-align: center;
-	font-size: 25px;
-	line-height: 37px;
+	font-size: 1.04rem;
 	color: #f4f9fa;
 	background-color: #00494d;
 	border-radius: 5px;
@@ -213,8 +211,8 @@ button:hover {
 	}
 
 	.total h5 {
-		font-size: 47px;
-		line-height: 70px;
+		font-size: 1.96rem;
+		line-height: 1.49em;
 		letter-spacing: -0.01em;
 	}
 
@@ -232,9 +230,14 @@ button:hover {
 	}
 
 	.attribution {
+		display: flex;
 		position: absolute;
 		bottom: 2px;
-		font-size: 15px;
+		font-size: .625rem;
+	}
+
+	.attribution p:first-of-type{
+		margin-right: .3rem;
 	}
 }
 
@@ -257,10 +260,10 @@ button:hover {
 		width: calc(100% - 2 * 16px);
 		border-radius: 5px;
 	}
-
+	
 	.attribution{
 		margin-top: 15px;
 		text-align: center;
-		font-size: 15px;
+		font-size: .625rem;
 	}
 }
