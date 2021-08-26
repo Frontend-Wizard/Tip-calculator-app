@@ -63,7 +63,7 @@ BillInput.addEventListener("focusout", () => {
 });
 
 BillInput.addEventListener("input", () => {
-	bill = BillInput.value >= 0 ? BillInput.value : 0;
+	bill = BillInput.value > 0 ? BillInput.value : 0;
 	update();
 });
 
@@ -83,10 +83,18 @@ NumOfPeople.addEventListener("input", () => {
 	} else {
 		NumOfPeopleError.innerText = null;
 		NumOfPeopleError.style.color = "#5e7a7d";
-		NumOfPeople.style.border = "none";
+		NumOfPeople.style.border = "2px solid #26c0ab";
 	}
 	NumOfPeopleValue = NumOfPeople.value > 0 ? NumOfPeople.value : 1;
 	update();
+});
+
+NumOfPeople.addEventListener("focusout", () => {
+	NumOfPeople.style.border = "2px solid transparent";
+});
+
+NumOfPeople.addEventListener("focusin", () => {
+	NumOfPeople.style.border = "2px solid #26c0ab";
 });
 
 Reset.addEventListener("click", ResetAll);

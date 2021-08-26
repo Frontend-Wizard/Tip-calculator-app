@@ -125,9 +125,12 @@ button {
 	outline: none;
 }
 
-#CustomTip:focus {
+input:focus{
 	border: 2px solid #26c0ab;
-	border-radius: 5px;
+	border-radius: 10px;
+}
+
+#CustomTip:focus {
 	color: #00494d;
 }
 
