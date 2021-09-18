@@ -10,6 +10,10 @@
 	transition: all 100ms;
 }
 
+body{
+	height: 100vh;
+}
+
 body,
 footer {
 	display: flex;
@@ -26,7 +30,7 @@ footer {
 
 main {
 	width: 70%;
-	max-width: 1300px;
+	max-width: 920px;
 	min-width: 300px;	
 	padding: 32px;
 	background-color: #ffffff;
